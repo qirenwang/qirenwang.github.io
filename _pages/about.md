@@ -15,7 +15,7 @@ Hi! I am a Ph.D. student in [Department of Computer Science](https://www.cis.ude
 
 ## Education
 
-- Expect to graduate in May, 2027, Ph.D. in Computer Science, University of Delaware
+- Expect to graduate in May, 2027, Ph.D. in Computer Science, [University of Delaware](https://www.udel.edu)
 - 2022, M.sc. in Data Science, [Rutgers University](https://rutgers.edu)
 - 2020, B.sc. in Computer Science, [University at Albany, State University of New York]((https://www.albany.edu))
 - 2020, B.sc. in Software Engineering, [Chongqing University of Posts and Telecommunications](http://www.cqupt.edu.cn)
