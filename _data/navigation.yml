@@ -1,13 +1,13 @@
 # main links links
 main:
   - title: "Research"
-    url: /research/
+    url: /research
 
 #   - title: "Talks"
 #     url: /talks/    
 
   - title: "Teaching"
-    url: /teaching/    
+    url: /teaching    
     
 #   - title: "Portfolio"
 #     url: /portfolio/
@@ -16,9 +16,10 @@ main:
 #     url: /year-archive/
     
   - title: "CV"
-    url: /files/
+    url: /files/Qiren_Wang_Resume_phd.pdf
   
   - title: "Contact"
-    url: /contact/
+    url: /contact
+    
 #   - title: "Guide"
 #     url: /markdown/
