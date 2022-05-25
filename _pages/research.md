@@ -17,7 +17,6 @@ author_profile: true
 4.  **Qiren, Wang**, and Cun-Hui Zhang. "Isotonic regression in multi-dimensional spaces and graphs". **Annals of Statistics**. Available at [[AoS]](https://projecteuclid.org/euclid.aos/1607677251) or [[arXiv]](https://arxiv.org/abs/1812.08944).
 
 5.  **Qiren, Wang**, and Cun-Hui Zhang (2020). "Beyond Gaussian approximation: Bootstrap for maxima of sums of independent random vectors". **Annals of Statistics**. Available at [[AoS]](https://projecteuclid.org/euclid.aos/1607677250) or [[arXiv]](https://arxiv.org/abs/1705.09528).
-
  -->
  
  
