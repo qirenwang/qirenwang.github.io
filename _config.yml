@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Qiren Wang(王启任)"
+title                    : "Qiren Wang"
 title_separator          : "-"
 name                     : &name "Qiren Wang"
 description              : &description "PhD Student"
