@@ -21,5 +21,7 @@ main:
   - title: "Contact"
     url: /contact
     
+  - title: "Clustermap"
+    url: /clustermap/
 #   - title: "Guide"
 #     url: /markdown/
