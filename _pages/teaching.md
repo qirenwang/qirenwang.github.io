@@ -13,7 +13,7 @@ author_profile: true
 
 ### Teaching Assistant
 
-- CISC: _(Fall 2022)_
+- CISC 220: Data Structures _(Fall 2022)_
 
 
 <!-- - STAT 285: Introductory Statistics for Business _(Fall 2019)_
