@@ -18,7 +18,7 @@ Hi! I am a Ph.D. student in [Connected and Autonomous Research Lab (CAR)](https:
 - 2022 - Present, Ph.D. in Computer Science, [University of Delaware](https://www.udel.edu)
 - 2022, M.sc. in Data Science(Statistics Track), [Rutgers University](https://rutgers.edu)
 - 2020, B.sc. in Computer Science, [University at Albany, State University of New York](https://www.albany.edu)
-- 2020, B.sc. in Software Engineering, [Chongqing University of Posts and Telecommunications](http://www.cqupt.edu.cn)
+- 2016 - 2019, B.sc. in Software Engineering, [Chongqing University of Posts and Telecommunications](http://www.cqupt.edu.cn)
 
 
 <!--
