@@ -13,6 +13,6 @@ author_profile: true
 
 <!-- # Contact -->
 
-101 Smith Hall, 18 Amstel Ave, Newark, DE 19716 \
+The CAR Lab, 225 Inspiration Blvd, Newark, DE 19713 \
 Email: qirenw at udel dot edu
 
