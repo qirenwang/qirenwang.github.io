@@ -5,10 +5,14 @@ permalink: /research/
 author_profile: true
 ---
 
+## Papers
+
+1.  **Qiren, Wang**, Ruijie Feng, Weisong Shi (2023). "Poster: Enhancing Autonomous Vehicles Safety Through Edge-Based Anomaly Detection". [[SEC 2023]]
+
 <!-- 
 ## Papers
 
-1.  **Qiren, Wang** (2020). "Slightly conservative bootstrap for maxima of sums". Submitted. [[arXiv]](https://arxiv.org/abs/2007.15877)
+1.  **Qiren, Wang** (2023). "Poster: Enhancing Autonomous Vehicles Safety Through Edge-Based Anomaly Detection". Submitted. [[arXiv]](https://arxiv.org/abs/2007.15877)
 
 2.  **Qiren, Wang**, Qiyang Han, and Bodhisattva Sen (2020). "Inference for local parameters in convexity constrained models". Submitted. Available at [[arXiv]](https://arxiv.org/abs/2006.10264).
 
