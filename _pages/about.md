@@ -10,7 +10,7 @@ redirect_from:
 
 Hi! I am a Ph.D. student in [Connected and Autonomous Research Lab (CAR)](https://www.thecarlab.org/home) at [Department of Computer Science](https://www.cis.udel.edu), at [University of Delaware](https://www.udel.edu). I am very fortunate to be advised by Professor [Weisong Shi](https://www.weisongshi.org). Before this, I received my master degree in Data Science(Statistics Track) from [Rutgers University](https://rutgers.edu).
 
-<!-- ## Research-->
+## Research
 
 
 ## Education
