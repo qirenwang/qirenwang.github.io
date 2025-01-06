@@ -7,7 +7,9 @@ author_profile: true
 
 ## Papers
 
-1.  **Qiren, Wang**, Ruijie Feng, Weisong Shi (2023). "Poster: Enhancing Autonomous Vehicles Safety Through Edge-Based Anomaly Detection". [[SEC'23]()]
+1.  **Tianze Wu**, Yongtao Yao, Qiren Wang, Arpan Bhattacharjee, Sa Wang, Yungang Bao, Weisong Shi(2024). "VeCBench:  A Benchmark Suite for Vehicle Computing". [[ASPLOS'24 Workshop]()]
+2.  **Qiren, Wang**, Ruijie Feng, Weisong Shi (2023). "Poster: Enhancing Autonomous Vehicles Safety Through Edge-Based Anomaly Detection". [[SEC'23]()]
+
 
 <!-- 
 ## Papers
