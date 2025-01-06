@@ -7,7 +7,7 @@ author_profile: true
 
 ## Papers
 
-1.  **Qiren, Wang**, Ruijie Feng, Weisong Shi (2023). "Poster: Enhancing Autonomous Vehicles Safety Through Edge-Based Anomaly Detection". [[SEC 2023]]
+1.  **Qiren, Wang**, Ruijie Feng, Weisong Shi (2023). "Poster: Enhancing Autonomous Vehicles Safety Through Edge-Based Anomaly Detection". [[SEC 2023]()]
 
 <!-- 
 ## Papers
