@@ -12,9 +12,11 @@ author_profile: true
 -->
 
 ### Teaching Assistant
-
-- CISC 220: Data Structures _(Fall 2022)_
+- CISC 662: Computer System _(Fall 2024)_
+- CISC 360: Computer Architecture _(Spring 2024)_
 - CISC 181: Introduction to Computer Science II _(Spring 2023)_
+- CISC 220: Data Structures _(Fall 2022)_
+
 
 
 <!-- - STAT 285: Introductory Statistics for Business _(Fall 2019)_
