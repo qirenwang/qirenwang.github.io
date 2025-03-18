@@ -8,8 +8,9 @@ author_profile: true
 ## Papers
 
 1. **Qiren, Wang**, Yongtao Yao, Weisong Shi (2025). "Edge-Assisted Object Perception for Autonomous Vehicles under Challenging Exposure and Blur Conditions". [[MOST'25]()]
-2.  Tianze Wu, Yongtao Yao, **Qiren Wang**, Arpan Bhattacharjee, Sa Wang, Yungang Bao, Weisong Shi (2024). "VeCBench:  A Benchmark Suite for Vehicle Computing". [[ASPLOS'24 Workshop]()][[Slides](https://drive.google.com/file/d/1z92XhAGeA_SfuRlWqK6SUMb_8Ui6igK1/view?usp=drive_link)]
-3.  **Qiren, Wang**, Ruijie Feng, Weisong Shi (2023). "Poster: Enhancing Autonomous Vehicles Safety Through Edge-Based Anomaly Detection". [[SEC'23]()]
+2. Ren Zhong, Zhaofeng Tian, **Qiren Wang**, Mingyu Guo and Weisong Shi (2025). "Design and Implementation of A Voice Controlled Indoor Autonomous Robot Kit". [[MOST'25]()]
+3.  Tianze Wu, Yongtao Yao, **Qiren Wang**, Arpan Bhattacharjee, Sa Wang, Yungang Bao, Weisong Shi (2024). "VeCBench:  A Benchmark Suite for Vehicle Computing". [[ASPLOS'24 Workshop]()][[Slides](https://drive.google.com/file/d/1z92XhAGeA_SfuRlWqK6SUMb_8Ui6igK1/view?usp=drive_link)]
+4.  **Qiren, Wang**, Ruijie Feng, Weisong Shi (2023). "Poster: Enhancing Autonomous Vehicles Safety Through Edge-Based Anomaly Detection". [[SEC'23]()]
 
 
 <!-- 
