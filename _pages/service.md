@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Teaching"
+title: "Service"
 permalink: /teaching/
 author_profile: true
 ---
@@ -10,8 +10,14 @@ author_profile: true
 
 - STAT 695: Linear Algebra and Multivariable Calculus Review _(Fall 2020)_
 -->
+### Reviewer
+#### Conference: 
+ACM/IEEE Symposium on Edge Computing (SEC) 2024
+#### Journal:
+IEEE Transactions on Big Data (TBD), ACM Transactions on Internet of Things (TIoT), ACM Computing Surveys (CSUR), IEEE Transactions on Services Computing (TSC), 
 
 ### Teaching Assistant
+- CISC 637: Database System _(Spring 2025)_
 - CISC 662: Computer System _(Fall 2024)_
 - CISC 360: Computer Architecture _(Spring 2024)_
 - CISC 181: Introduction to Computer Science II _(Spring 2023)_
