@@ -8,7 +8,7 @@ author_profile: true
 ## Publications
 1.  **Qiren Wang**, Yongtao Yao, Nejib Ammar and Weisong Shi, "iFLOW: An Intelligent and Scalable Multi-Model Federated Learning Framework on the Wheels," *IEEE Transactions on Intelligent Transportation Systems ([[T-ITS]()])*, May 2025. 
 2.  **Qiren Wang**, Yongtao Yao, Weisong Shi, "Edge-Assisted Object Perception for Autonomous Vehicles under Challenging Exposure and Blur Conditions," *IEEE International Conference on Mobility: Operations, Services, and Technologies ([[MOST]()])*, 2025. 
-3.  Ren Zhong, Zhaofeng Tian, **Qiren Wang**, Mingyu Guo and Weisong Shi, "Design and Implementation of A Voice Controlled Indoor Autonomous Robot Kit," *IEEE International Conference on Mobility: Operations, Services, and Technologies ([[MOST'25]()])*, 2025. 
+3.  Ren Zhong, Zhaofeng Tian, **Qiren Wang**, Mingyu Guo and Weisong Shi, "Design and Implementation of A Voice Controlled Indoor Autonomous Robot Kit," *IEEE International Conference on Mobility: Operations, Services, and Technologies ([MOST]())*, 2025. 
 4.  Tianze Wu, Yongtao Yao, **Qiren Wang**, Arpan Bhattacharjee, Sa Wang, Yungang Bao, Weisong Shi, "VeCBench: A Benchmark Suite for Vehicle Computing," *International Conference on Architectural Support for Programming Languages and Operating Systems ([[ASPLOS]()]) Workshop*, 2024.[[Slides](https://drive.google.com/file/d/1z92XhAGeA_SfuRlWqK6SUMb_8Ui6igK1/view?usp=drive_link)]
 5.  **Qiren Wang**, Ruijie Feng, Weisong Shi, "Poster: Enhancing Autonomous Vehicles Safety Through Edge-Based Anomaly Detection," *ACM/IEEE Symposium on Edge Computing ([[SEC]()])*, 2023.
 
