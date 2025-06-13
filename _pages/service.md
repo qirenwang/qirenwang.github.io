@@ -15,7 +15,8 @@ author_profile: true
 ACM/IEEE Symposium on Edge Computing (SEC) 2024
 #### Journal:
 IEEE Transactions on Big Data (TBD), ACM Transactions on Internet of Things (TIoT), ACM Computing Surveys (CSUR), IEEE Transactions on Services Computing (TSC), 
-
+### Webmaster
+IEEE/ACM international conference on Connected Health: Applications, Systems and Engineering Technologies (CHASE) 2024
 ### Teaching Assistant
 - CISC 637: Database System _(Spring 2025)_
 - CISC 662: Computer System _(Fall 2024)_
