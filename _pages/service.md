@@ -14,7 +14,7 @@ author_profile: true
 #### Conference: 
 ACM/IEEE Symposium on Edge Computing (SEC) 2024
 #### Journal:
-IEEE Transactions on Big Data (TBD), ACM Transactions on Internet of Things (TIoT), ACM Computing Surveys (CSUR), IEEE Transactions on Services Computing (TSC), 
+IEEE Transactions on Big Data (TBD), ACM Transactions on Internet of Things (TIOT), ACM Computing Surveys (CSUR), IEEE Transactions on Services Computing (TSC), 
 ### Webmaster
 IEEE/ACM international conference on Connected Health: Applications, Systems and Engineering Technologies (CHASE) 2024
 ### Teaching Assistant
