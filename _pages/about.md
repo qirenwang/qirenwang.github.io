@@ -8,10 +8,14 @@ redirect_from:
   - /about.html
 ---
 
-Hi! I am a Ph.D. student in [Connected and Autonomous Research Lab (CAR)](https://www.thecarlab.org/home) at [Department of Computer Science](https://www.cis.udel.edu), at [University of Delaware](https://www.udel.edu). I am very fortunate to be advised by Professor [Weisong Shi](https://www.weisongshi.org). Before this, I received my master degree in Data Science(Statistics Track) from [Rutgers University](https://rutgers.edu).
+Hi! I am a Forth-year Ph.D. student in [Connected and Autonomous Research Lab (CAR)](https://www.thecarlab.org/home) at [Department of Computer Science](https://www.cis.udel.edu), at [University of Delaware](https://www.udel.edu). I am very fortunate to be advised by Professor [Weisong Shi](https://www.weisongshi.org). Before this, I received my master degree in Data Science(Statistics Track) from [Rutgers University](https://rutgers.edu).
 
 ## Research
-My research interests include Autonomous Driving, Machine Learning, Edge Computing and Federated Learning.
+My current research interests include **Autonomous Driving, Machine Learning, LLM Agents and Federated Learning, etc**.
+
+- **Autonomous Driving**: Enhance safety of autonomous driving systems under challenging scenarios. Design and develop ML/DL models to tackle critial issues in perception and motion prediction tasks.  
+- **LLM Agents**: Advance autonomous driving safety and trustworthy through intelligent LLM agents. Integrate LLM Agents into autonomous driving system to enhance decision-making and situational awareness, enabling adaptive and secure responses in dynamic driving environments.
+- **Federated Learning**: Architect and develop an efficient and scalable federated learning framework for ML/DL models training on heterogeneous devices.
 
 ## Education
 
