@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-Hi! I am a Fourth-year Ph.D. student in [Connected and Autonomous Research Lab (CAR)](https://www.thecarlab.org/home) at [Department of Computer Science](https://www.cis.udel.edu), at [University of Delaware](https://www.udel.edu). Currently, I am fortunate under the supervision of Professor [Weisong Shi](https://www.weisongshi.org). Before this, I received my master degree in Data Science(Statistics Track) from [Rutgers University](https://rutgers.edu).
+Hi! I am a Ph.D. Candidate in [Connected and Autonomous Research Lab (CAR)](https://www.thecarlab.org/home) at [Department of Computer Science](https://www.cis.udel.edu), at [University of Delaware](https://www.udel.edu). Currently, I am fortunate under the supervision of Professor [Weisong Shi](https://www.weisongshi.org). Before this, I received my master degree in Data Science(Statistics Track) from [Rutgers University](https://rutgers.edu).
 
 ## Research
 My current research interests include **Autonomous Driving, Machine Learning, LLM Agents and Federated Learning, etc**.
