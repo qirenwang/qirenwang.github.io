@@ -86,7 +86,7 @@ author:
   location         : "New York Metropolitan Area"
   employer         :
   pubmed           : # "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  googlescholar    : # "http://yourfullgooglescholarurl.com"
+  googlescholar    : "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://scholar.google.com/citations%3Fuser%3DJa0jXMUAAAAJ%26hl%3Den&ved=2ahUKEwjSkPq-1sWSAxU1pIkEHcIKBowQFnoECBoQAQ&usg=AOvVaw0Xbm8DU-HQ0RLFDRyRXmSt"
   email            :
   researchgate     : # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
