@@ -12,6 +12,8 @@ author_profile: true
 -->
 ### Reviewer
 #### Conference: 
+- The IEEE International Conference on Intelligent Transportation Systems (**ITSC**) 2026
+- IEEE Intelligent Vehicles Symposium (**IV**) 2026
 - International Conference on Robotics and Automation (**ICRA**) 2025
 - ACM/IEEE Symposium on Edge Computing (**SEC**) 2025, 2024
 
