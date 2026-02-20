@@ -11,10 +11,11 @@ redirect_from:
 Hi! I am a Ph.D. Candidate in [Connected and Autonomous Research Lab (CAR)](https://www.thecarlab.org/home) at [Department of Computer Science](https://www.cis.udel.edu), at [University of Delaware](https://www.udel.edu). Currently, I am fortunate under the supervision of Professor [Weisong Shi](https://www.weisongshi.org). Before this, I received my master degree in Data Science(Statistics Track) from [Rutgers University](https://rutgers.edu).
 
 ## Research
-My current research interests include **Autonomous Driving, Machine Learning, Vision Language Models, LLM Agents and Federated Learning, etc**.
+My current research interests include **Physical Intelligence, Autonomous Driving, Machine Learning, Vision-Language Models (VLMs), Vision-Language-Action Models (VLAs), Large Language Models (LLMs), and Federated Learning.**.
 
-- **Autonomous Driving**: Enhance safety of autonomous driving systems under challenging scenarios. Design and develop ML/DL models to tackle critial issues in perception and motion prediction tasks.  
-- **VLM/LLM Agents**: Advance autonomous driving safety and trustworthy through intelligent VLM/LLM agents. Integrate VLM/LLM Agents into autonomous driving system to enhance decision-making and situational awareness, enabling adaptive and secure responses in dynamic driving environments.
+- **Autonomous Driving**: Enhance safety of autonomous driving systems under challenging scenarios. Design and develop ML/DL models to tackle critial issues in perception and motion prediction tasks.
+- **VLM/VLA**: Explore vision-language models (VLMs) and vision-language-action models (VLAs) for autonomous driving, with a focus on enabling vehicles to adaptively reason about the physical world across diverse scenarios. This work aims to improve scene understanding and context-aware behavior by integrating multimodal reasoning into autonomous driving systems.
+- **LLM Agent**: Advance autonomous driving safety and trustworthy through intelligent VLM/LLM agents. Integrate VLM/LLM Agents into autonomous driving system to enhance decision-making and situational awareness, enabling adaptive and secure responses in dynamic driving environments.
 - **Federated Learning**: Architect and develop an efficient and scalable federated learning framework for ML/DL models training on heterogeneous devices.
 
 ## Education
