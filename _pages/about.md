@@ -11,7 +11,7 @@ redirect_from:
 Hi! I am a Ph.D. Candidate in [Connected and Autonomous Research Lab (CAR)](https://www.thecarlab.org/home) at [Department of Computer Science](https://www.cis.udel.edu), at [University of Delaware](https://www.udel.edu). Currently, I am fortunate under the supervision of Professor [Weisong Shi](https://www.weisongshi.org). Before this, I received my master degree in Data Science(Statistics Track) from [Rutgers University](https://rutgers.edu).
 
 ## Research
-My current research interests include **Autonomous Driving, Physical Intelligence, Machine Learning, VLMs/LLMs, Vision-Language-Action Models (VLAs), Edge Computing, and Federated Learning**.
+My current research interests include **Autonomous Driving, Physical Intelligence, Machine Learning, VLMs/LLMs, Vision-Language-Action Models (VLAs), and Federated Learning**.
 
 - **Autonomous Driving**: Enhance safety of autonomous driving systems under challenging scenarios. Design and develop ML/DL models to tackle critial issues in perception and motion prediction tasks.
 - **VLM/VLA**: Explore vision-language models (VLMs) and vision-language-action models (VLAs) for autonomous driving, with a focus on enabling vehicles to adaptively reason about the physical world across diverse scenarios. This work aims to improve scene understanding and context-aware behavior by integrating multimodal reasoning into autonomous driving systems.
