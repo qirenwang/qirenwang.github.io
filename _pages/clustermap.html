@@ -5,31 +5,39 @@ permalink: /clustermap/
 author_profile: true
 ---
 
-<!-- <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-<tbody>
-<tr>
-<td style="padding:0px">
-<br>
-<p style="text-align:center;font-size:small;">
-      <!--    Special thanks to <a href="https://jonbarron.info/">Jon Barron</a> and <a href="https://pgeneva.com/">Patrick Geneva</a> for the website's <a href="https://github.com/qirenwang/qirenwang.github.io">source code</a>. -->
-</p>
-</td>
-</tr>
-</tbody>
-</table> 
+<div id="clustrmaps-widget" style="text-align:center;">
+  <script>
+    function clustrmapsHasOutput() {
+      return document.querySelector(
+        "#clustrmaps-widget img, #clustrmaps-widget iframe, #clustrmaps-widget canvas, #clustrmaps-widget object, #clustrmaps-widget svg, #clustrmaps-widget a[href*='clustrmaps']"
+      );
+    }
 
+    window.clustrmapsFailed = function () {
+      var fallback = document.getElementById("clustrmaps-fallback");
+      if (fallback) {
+        fallback.style.display = "block";
+      }
+    };
 
-<table style="width:55%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-   <tr>
-      <td style="padding:25px;width:85%;vertical-align:middle">
-         <p style="text-align:center;font-size:small;">
-            <!--              <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=400&t=tt&d=SmVNKAru4SRtedjTqTTFYIJmNGoHTrBK5VOIsscudyM'></script>-->
-            <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=XfNj1V1ObUKxL0p2QldZmz3da_t2lX5f1q6wW-zen1E&cl=ffffff&w=a"></script>
-         </p>
-      </td>
-</tr>
-</tbody></table>
-
-</td>
-</tr>
-</table>
+    window.setTimeout(function () {
+      if (!clustrmapsHasOutput()) {
+        window.clustrmapsFailed();
+      }
+    }, 5000);
+  </script>
+  <script
+    type="text/javascript"
+    id="clustrmaps"
+    src="https://clustrmaps.com/map_v2.js?d=XfNj1V1ObUKxL0p2QldZmz3da_t2lX5f1q6wW-zen1E&cl=ffffff&w=a"
+    onerror="window.clustrmapsFailed()">
+  </script>
+  <p id="clustrmaps-fallback" style="display:none;text-align:center;font-size:0.9em;color:#7a8288;">
+    Visitor map is temporarily unavailable because the external ClustrMaps widget could not be loaded.
+  </p>
+  <noscript>
+    <p style="text-align:center;font-size:0.9em;color:#7a8288;">
+      Visitor map requires JavaScript to load.
+    </p>
+  </noscript>
+</div>
