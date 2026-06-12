@@ -1,0 +1,279 @@
+---
+layout: archive
+title: "gallery"
+permalink: /gallery/
+author_profile: true
+---
+
+<style>
+  .gallery-page {
+    --gallery-accent: #b012b8;
+    --gallery-text: #202124;
+    --gallery-muted: #6f747a;
+    margin-bottom: 4rem;
+  }
+
+  .archive > .page__title {
+    margin-bottom: 0.35em;
+    color: #202124;
+    font-size: 3.8rem;
+    font-weight: 300;
+    line-height: 1;
+  }
+
+  .gallery-intro {
+    margin: 0;
+    max-width: 58rem;
+    color: var(--gallery-text);
+    font-size: 1.05rem;
+    line-height: 1.7;
+  }
+
+  .gallery-filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin: 4rem 0 4.5rem;
+  }
+
+  .gallery-filter {
+    min-width: 8.5rem;
+    padding: 0.9rem 1.5rem;
+    color: #fff;
+    font: inherit;
+    font-weight: 600;
+    line-height: 1;
+    border: 0;
+    border-radius: 6px;
+    background: var(--gallery-accent);
+    box-shadow: 0 8px 18px rgba(176, 18, 184, 0.16);
+    cursor: pointer;
+    transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+  }
+
+  .gallery-filter:hover,
+  .gallery-filter:focus {
+    background: #8d0f94;
+    box-shadow: 0 10px 24px rgba(176, 18, 184, 0.22);
+    transform: translateY(-1px);
+  }
+
+  .gallery-filter.is-active {
+    background: #6f09a8;
+  }
+
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 4.5rem 5rem;
+    align-items: start;
+  }
+
+  .gallery-card {
+    margin: 0;
+  }
+
+  .gallery-card[hidden] {
+    display: none;
+  }
+
+  .gallery-card button {
+    display: block;
+    width: 100%;
+    padding: 0;
+    border: 0;
+    border-radius: 8px;
+    background: transparent;
+    box-shadow: 0 14px 28px rgba(32, 33, 36, 0.12);
+    cursor: zoom-in;
+    overflow: hidden;
+  }
+
+  .gallery-card img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    transition: transform 0.25s ease;
+  }
+
+  .gallery-card button:hover img,
+  .gallery-card button:focus img {
+    transform: scale(1.025);
+  }
+
+  .gallery-card figcaption {
+    margin-top: 0.9rem;
+    color: var(--gallery-muted);
+    font-family: inherit;
+    font-size: 0.9rem;
+    line-height: 1.45;
+  }
+
+  .gallery-card strong {
+    display: block;
+    color: var(--gallery-text);
+    font-weight: 600;
+  }
+
+  .gallery-lightbox {
+    position: fixed;
+    inset: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.78);
+    z-index: 10000;
+  }
+
+  .gallery-lightbox.is-open {
+    display: flex;
+  }
+
+  .gallery-lightbox__inner {
+    max-width: min(92vw, 1100px);
+    max-height: 90vh;
+  }
+
+  .gallery-lightbox img {
+    display: block;
+    max-width: 100%;
+    max-height: 78vh;
+    border-radius: 8px;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
+  }
+
+  .gallery-lightbox p {
+    margin: 1rem 0 0;
+    color: #fff;
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .gallery-lightbox button {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    color: #fff;
+    font-size: 1.8rem;
+    line-height: 1;
+    border: 0;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.15);
+    cursor: pointer;
+  }
+
+  @media (max-width: 760px) {
+    .archive > .page__title {
+      font-size: 3rem;
+    }
+
+    .gallery-filters {
+      justify-content: flex-start;
+      gap: 0.75rem;
+      margin: 2.5rem 0 3rem;
+    }
+
+    .gallery-filter {
+      min-width: auto;
+      padding: 0.8rem 1rem;
+      font-size: 0.95rem;
+    }
+
+    .gallery-grid {
+      grid-template-columns: 1fr;
+      gap: 2.25rem;
+    }
+  }
+</style>
+
+<section class="gallery-page">
+  <p class="gallery-intro">
+    A collection of moments from research, travel, campus life, and everyday scenes.
+  </p>
+
+  <div class="gallery-filters" aria-label="Gallery filters">
+    <button class="gallery-filter is-active" type="button" data-filter="all">Show All</button>
+    <button class="gallery-filter" type="button" data-filter="research">Research</button>
+    <button class="gallery-filter" type="button" data-filter="travel">Travel</button>
+    <button class="gallery-filter" type="button" data-filter="life">Life</button>
+  </div>
+
+  <div class="gallery-grid">
+    {% for item in site.data.gallery %}
+    <figure class="gallery-card" data-category="{{ item.category }}">
+      <button type="button" data-full="{{ item.image }}" data-title="{{ item.title }}">
+        <img src="{{ item.image }}" alt="{{ item.alt }}">
+      </button>
+      <figcaption><strong>{{ item.title }}</strong>{{ item.subtitle }}</figcaption>
+    </figure>
+    {% endfor %}
+  </div>
+</section>
+
+<div class="gallery-lightbox" id="gallery-lightbox" aria-hidden="true">
+  <button type="button" aria-label="Close gallery image">&times;</button>
+  <div class="gallery-lightbox__inner">
+    <img src="" alt="">
+    <p></p>
+  </div>
+</div>
+
+<script>
+  (function () {
+    var filters = document.querySelectorAll(".gallery-filter");
+    var cards = document.querySelectorAll(".gallery-card");
+    var lightbox = document.getElementById("gallery-lightbox");
+    var lightboxImage = lightbox.querySelector("img");
+    var lightboxCaption = lightbox.querySelector("p");
+    var closeButton = lightbox.querySelector("button");
+
+    filters.forEach(function (filter) {
+      filter.addEventListener("click", function () {
+        var category = filter.getAttribute("data-filter");
+
+        filters.forEach(function (item) {
+          item.classList.toggle("is-active", item === filter);
+        });
+
+        cards.forEach(function (card) {
+          var visible = category === "all" || card.getAttribute("data-category") === category;
+          card.hidden = !visible;
+        });
+      });
+    });
+
+    cards.forEach(function (card) {
+      var trigger = card.querySelector("button");
+      trigger.addEventListener("click", function () {
+        lightboxImage.src = trigger.getAttribute("data-full");
+        lightboxImage.alt = trigger.querySelector("img").alt;
+        lightboxCaption.textContent = trigger.getAttribute("data-title");
+        lightbox.classList.add("is-open");
+        lightbox.setAttribute("aria-hidden", "false");
+      });
+    });
+
+    function closeLightbox() {
+      lightbox.classList.remove("is-open");
+      lightbox.setAttribute("aria-hidden", "true");
+      lightboxImage.src = "";
+    }
+
+    closeButton.addEventListener("click", closeLightbox);
+    lightbox.addEventListener("click", function (event) {
+      if (event.target === lightbox) {
+        closeLightbox();
+      }
+    });
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "Escape" && lightbox.classList.contains("is-open")) {
+        closeLightbox();
+      }
+    });
+  })();
+</script>
