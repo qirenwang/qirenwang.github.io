@@ -54,45 +54,45 @@ html[data-theme="dark"] {
   color-scheme: dark;
 
   body {
-    color: #e6edf3;
-    background: #0d1117;
+    color: #e8e8e8;
+    background: #1c1c1d;
   }
 
   .masthead,
   .greedy-nav,
   .page__footer {
-    background: #0d1117;
-    border-color: #30363d;
+    background: #1c1c1d;
+    border-color: #424246;
   }
 
   .greedy-nav a,
   .masthead__menu-item a,
   .theme-toggle {
-    color: #e6edf3;
+    color: #e8e8e8;
   }
 
   .greedy-nav a:hover,
   .masthead__menu-item a:hover,
   .theme-toggle:hover,
   .theme-toggle:focus {
-    color: #d95ce0;
+    color: #2698ba;
   }
 
   .greedy-nav .visible-links a:before {
-    background: #d95ce0;
+    background: #2698ba;
   }
 
   .greedy-nav .hidden-links,
   .author__urls {
-    color: #e6edf3;
-    background: #161b22;
-    border-color: #30363d;
+    color: #e8e8e8;
+    background: #212529;
+    border-color: #424246;
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
   }
 
   .theme-toggle {
-    border-color: #30363d;
-    background: #161b22;
+    border-color: #424246;
+    background: #212529;
 
     .fa-moon {
       display: none;
@@ -114,7 +114,7 @@ html[data-theme="dark"] {
   .author__name,
   .cv-entry__main h3,
   .gallery-card strong {
-    color: #f0f6fc;
+    color: #e8e8e8;
   }
 
   .page__content,
@@ -122,14 +122,14 @@ html[data-theme="dark"] {
   .sidebar,
   .cv-page,
   .gallery-page {
-    color: #e6edf3;
+    color: #e8e8e8;
   }
 
   a,
   .page__content a,
   .archive a,
   .cv-page a {
-    color: #d95ce0;
+    color: #2698ba;
   }
 
   .page__content h2,
@@ -140,7 +140,7 @@ html[data-theme="dark"] {
   table,
   th,
   td {
-    border-color: #30363d;
+    border-color: #424246;
   }
 
   table,
@@ -152,9 +152,9 @@ html[data-theme="dark"] {
   li > code,
   figcaption > code,
   td > code {
-    color: #e6edf3;
-    background: #161b22;
-    border-color: #30363d;
+    color: #e8e8e8;
+    background: #2c3237;
+    border-color: #424246;
   }
 
   figcaption,
@@ -165,25 +165,25 @@ html[data-theme="dark"] {
   .cv-meta,
   .cv-entry__side,
   .gallery-card figcaption {
-    color: #8b949e;
+    color: #828282;
   }
 
   .cv-entry__org,
   .cv-entry__venue,
   .cv-entry__authors {
-    color: #c9d1d9;
+    color: #e8e8e8;
   }
 
   .cv-download,
   .gallery-filter {
     color: #fff !important;
-    background: #b012b8;
+    background: #2698ba;
   }
 
   .gallery-page {
-    --gallery-accent: #b012b8;
-    --gallery-text: #f0f6fc;
-    --gallery-muted: #8b949e;
+    --gallery-accent: #2698ba;
+    --gallery-text: #e8e8e8;
+    --gallery-muted: #828282;
   }
 
   .gallery-card button {
