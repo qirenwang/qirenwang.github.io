@@ -1,0 +1,64 @@
+---
+layout: archive
+title: "CV"
+permalink: /cv/
+author_profile: false
+---
+
+{% assign cv = site.data.cv %}
+
+<section class="cv-page">
+  <header class="cv-hero">
+    <div>
+      <p class="cv-kicker">{{ cv.basics.label }}</p>
+      <h1>{{ cv.basics.name }}</h1>
+      <p>{{ cv.basics.summary }}</p>
+      <div class="cv-meta">
+        <span>{{ cv.basics.location }}</span>
+        <a href="{{ cv.basics.website }}">{{ cv.basics.website }}</a>
+      </div>
+    </div>
+    <a class="cv-download" href="{{ cv.basics.pdf }}">Download PDF</a>
+  </header>
+
+  {% for section_hash in cv.sections %}
+    {% assign section = section_hash[1] %}
+    <section class="cv-section">
+      <h2>{{ section.title }}</h2>
+
+      {% if section.entries %}
+        <div class="cv-timeline">
+          {% for item in section.entries %}
+            <article class="cv-entry">
+              <div class="cv-entry__side">
+                {% if item.period %}<time>{{ item.period }}</time>{% endif %}
+                {% if item.location %}<span>{{ item.location }}</span>{% endif %}
+              </div>
+              <div class="cv-entry__main">
+                <h3>{{ item.title | markdownify | remove: '<p>' | remove: '</p>' }}</h3>
+                {% if item.institution %}<p class="cv-entry__org">{{ item.institution }}</p>{% endif %}
+                {% if item.authors %}<p class="cv-entry__authors">{{ item.authors | markdownify | remove: '<p>' | remove: '</p>' }}</p>{% endif %}
+                {% if item.venue %}<p class="cv-entry__venue">{{ item.venue }}</p>{% endif %}
+                {% if item.details %}
+                  <ul>
+                    {% for detail in item.details %}
+                      <li>{{ detail | markdownify | remove: '<p>' | remove: '</p>' }}</li>
+                    {% endfor %}
+                  </ul>
+                {% endif %}
+              </div>
+            </article>
+          {% endfor %}
+        </div>
+      {% endif %}
+
+      {% if section.groups %}
+        <div class="cv-skill-list">
+          {% for group in section.groups %}
+            <p><strong>{{ group.name }}:</strong> {{ group.keywords }}</p>
+          {% endfor %}
+        </div>
+      {% endif %}
+    </section>
+  {% endfor %}
+</section>

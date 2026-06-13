@@ -13,6 +13,16 @@
 
 <script>
   document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  (function () {
+    var theme = null;
+    try {
+      theme = window.localStorage.getItem('qirenwang-theme');
+    } catch (error) {}
+    if (!theme && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      theme = 'dark';
+    }
+    document.documentElement.setAttribute('data-theme', theme || 'light');
+  })();
 </script>
 
 <!-- For all browsers -->

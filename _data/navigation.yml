@@ -16,7 +16,7 @@ main:
 #     url: /year-archive/
     
   - title: "CV"
-    url: /files/Qiren_Wang_Resume_phd.pdf
+    url: /cv/
   
   - title: "Contact"
     url: /contact

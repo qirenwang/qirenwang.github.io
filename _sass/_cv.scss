@@ -1,0 +1,186 @@
+/* ==========================================================================
+   CV
+   ========================================================================== */
+
+.cv-page {
+  max-width: 980px;
+  margin: 0 auto 4rem;
+  color: $text-color;
+
+  a {
+    color: $link-color;
+  }
+}
+
+.cv-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 2rem;
+  align-items: start;
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid $border-color;
+
+  h1 {
+    margin: 0 0 0.35em;
+    font-size: 3.1rem;
+    font-weight: 300;
+    line-height: 1;
+  }
+
+  p {
+    margin: 0;
+    max-width: 48rem;
+    line-height: 1.7;
+  }
+}
+
+.cv-kicker {
+  margin-bottom: 0.75rem !important;
+  color: $link-color;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.cv-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  margin-top: 1.2rem;
+  color: mix(#fff, $text-color, 25%);
+  font-size: 0.95rem;
+}
+
+.cv-download {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 8.5rem;
+  padding: 0.72rem 1rem;
+  color: #fff !important;
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1;
+  text-decoration: none !important;
+  border-radius: 6px;
+  background: $link-color;
+  box-shadow: 0 8px 18px rgba(176, 18, 184, 0.16);
+
+  &:hover {
+    background: mix(#000, $link-color, 18%);
+  }
+}
+
+.cv-section {
+  display: grid;
+  grid-template-columns: 10rem minmax(0, 1fr);
+  gap: 2rem;
+  margin-top: 2.4rem;
+
+  h2 {
+    margin: 0;
+    padding: 0;
+    color: $link-color;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    border: 0;
+  }
+}
+
+.cv-timeline {
+  display: grid;
+  gap: 1.45rem;
+}
+
+.cv-entry {
+  display: grid;
+  grid-template-columns: 8rem minmax(0, 1fr);
+  gap: 1.25rem;
+}
+
+.cv-entry__side {
+  color: mix(#fff, $text-color, 35%);
+  font-size: 0.86rem;
+  line-height: 1.45;
+
+  time,
+  span {
+    display: block;
+  }
+}
+
+.cv-entry__main {
+  h3 {
+    margin: 0;
+    color: $text-color;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.35;
+
+    p {
+      margin: 0;
+    }
+  }
+
+  p {
+    margin: 0.2rem 0 0;
+    line-height: 1.55;
+  }
+
+  ul {
+    margin: 0.55rem 0 0;
+    padding-left: 1.1rem;
+  }
+
+  li {
+    margin-bottom: 0.35rem;
+  }
+}
+
+.cv-entry__org,
+.cv-entry__venue {
+  color: mix(#fff, $text-color, 20%);
+  font-weight: 500;
+}
+
+.cv-entry__authors {
+  color: mix(#fff, $text-color, 15%);
+}
+
+.cv-skill-list {
+  display: grid;
+  gap: 0.65rem;
+
+  p {
+    margin: 0;
+    line-height: 1.6;
+  }
+}
+
+@media (max-width: 760px) {
+  .cv-hero,
+  .cv-section,
+  .cv-entry {
+    grid-template-columns: 1fr;
+  }
+
+  .cv-hero {
+    gap: 1.25rem;
+
+    h1 {
+      font-size: 2.5rem;
+    }
+  }
+
+  .cv-section {
+    gap: 1rem;
+  }
+
+  .cv-entry {
+    gap: 0.35rem;
+  }
+}
