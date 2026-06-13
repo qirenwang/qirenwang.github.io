@@ -53,6 +53,16 @@
 html[data-theme="dark"] {
   color-scheme: dark;
 
+  ::selection {
+    color: #fff;
+    background: rgba(38, 152, 186, 0.55);
+  }
+
+  ::-moz-selection {
+    color: #fff;
+    background: rgba(38, 152, 186, 0.55);
+  }
+
   body {
     color: #e8e8e8;
     background: #1c1c1d;
@@ -104,6 +114,26 @@ html[data-theme="dark"] {
 
   .author__urls:after {
     border-color: #212529 transparent;
+  }
+
+  .author__avatar img {
+    box-shadow: 0 0 0 1px rgba(38, 152, 186, 0.42),
+                0 14px 34px rgba(38, 152, 186, 0.28);
+  }
+
+  .author__urls,
+  .author__urls li,
+  .author__urls a,
+  .author__urls .fa,
+  .author__urls .fas,
+  .author__urls .fab,
+  .author__urls .far,
+  .author__urls .ai {
+    color: #e8e8e8 !important;
+  }
+
+  .author__urls a:hover {
+    color: #2698ba !important;
   }
 
   .theme-toggle {
