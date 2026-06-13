@@ -82,12 +82,28 @@ html[data-theme="dark"] {
     background: #2698ba;
   }
 
-  .greedy-nav .hidden-links,
+  .greedy-nav .hidden-links {
+    color: #e8e8e8;
+    background: #212529;
+    border-color: #424246;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
+  }
+
   .author__urls {
     color: #e8e8e8;
     background: #212529;
     border-color: #424246;
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
+
+    @include breakpoint($large) {
+      background: transparent;
+      border-color: transparent;
+      box-shadow: none;
+    }
+  }
+
+  .author__urls:after {
+    border-color: #212529 transparent;
   }
 
   .theme-toggle {
