@@ -74,41 +74,18 @@ sections:
   research_experience:
     title: "Research Experiences"
     entries:
-      - period: "2025 - Present · 1 yr 6 mos"
+      - period: "2022 Nov - Present"
         location: "Newark, DE"
         title: "Research Assistant"
         institution: "University of Delaware · Full-time"
         details:
           - "Lab Website: [https://www.thecarlab.org/](https://www.thecarlab.org/)"
-      - period: "Aug 2022 - May 2025 · 2 yrs 10 mos"
-        location: "Newark, DE"
-        title: "Teaching Assistant"
-        institution: "University of Delaware · Full-time"
       - period: "Aug 2021 - Oct 2021 · 3 mos"
         location: "New York City Metropolitan Area"
         title: "Research Assistant"
         institution: "Rutgers University-New Brunswick · Part-time"
         details:
           - "Vivian's Lab"
-
-  teaching:
-    title: "Teaching Assistant"
-    entries:
-      - period: "Spring 2025"
-        title: "CISC 637: Database System"
-        institution: "University of Delaware"
-      - period: "Fall 2024"
-        title: "CISC 662: Computer System"
-        institution: "University of Delaware"
-      - period: "Spring 2024"
-        title: "CISC 360: Computer Architecture"
-        institution: "University of Delaware"
-      - period: "Spring 2023"
-        title: "CISC 181: Introduction to Computer Science II"
-        institution: "University of Delaware"
-      - period: "Fall 2022"
-        title: "CISC 220: Data Structures"
-        institution: "University of Delaware"
 
   skills:
     title: "Technical Skills"
