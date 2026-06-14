@@ -111,9 +111,11 @@ sections:
         institution: "University of Delaware"
 
   skills:
-    title: "Skills"
+    title: "Technical Skills"
     groups:
-      - name: "Research"
-        keywords: "Autonomous driving, edge computing, physical intelligence, multimodal reasoning, federated learning"
-      - name: "Machine Learning"
-        keywords: "VLMs, LLMs, VLA models, perception, motion prediction, trustworthy agents"
+      - name: "ML/AI Engineering"
+        keywords: "Python, PyTorch, TensorFlow, NumPy, pandas, scikit-learn, Machine Learning, Deep Learning, Computer Vision, Foundation Models (LLM/VLM/VLA), Agentic AI, RAG, Statistical Learning, Time Series Modeling"
+      - name: "Software Engineering"
+        keywords: "Java, C++, R, JavaScript, Node.js, PHP, SQL, HTML, CSS, React, npm, RESTful APIs, Selenium3"
+      - name: "Tools & Hardware"
+        keywords: "CUDA, ROS2, Docker, Git, AWS, Google Cloud, MySQL, Oracle, Redis, MongoDB, VS Code, NVIDIA Jetson"
