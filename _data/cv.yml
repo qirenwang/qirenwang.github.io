@@ -29,22 +29,6 @@ sections:
         title: "B.Sc. in Software Engineering"
         institution: "Chongqing University of Posts and Telecommunications"
 
-  research:
-    title: "Research Interests"
-    entries:
-      - title: "Autonomous Driving"
-        details:
-          - "Safety, perception, motion prediction, and edge-assisted intelligent driving systems."
-      - title: "Vision-Language Models and Vision-Language-Action Models"
-        details:
-          - "Multimodal reasoning for autonomous driving and embodied AI."
-      - title: "LLM Agents"
-        details:
-          - "Trustworthy agentic systems for decision-making and situational awareness."
-      - title: "Federated Learning"
-        details:
-          - "Efficient and scalable model training across heterogeneous edge devices."
-
   working_experience:
     title: "Working Experiences"
     entries:
@@ -70,6 +54,18 @@ sections:
         location: "Chengdu, Sichuan, China"
         title: "Software Engineer Intern"
         institution: "良坤科技 Liangkun Tech · Internship"
+
+  research:
+    title: "Research Interests"
+    groups:
+      - name: "Autonomous Driving"
+        keywords: "Safety, perception, motion prediction, and edge-assisted intelligent driving systems."
+      - name: "Vision-Language Models and Vision-Language-Action Models"
+        keywords: "Multimodal reasoning for autonomous driving and embodied AI."
+      - name: "LLM Agents"
+        keywords: "Trustworthy agentic systems for decision-making and situational awareness."
+      - name: "Federated Learning"
+        keywords: "Efficient and scalable model training across heterogeneous edge devices."
 
   research_experience:
     title: "Research Experiences"
