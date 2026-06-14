@@ -1,11 +1,12 @@
 ---
 layout: archive
-title: "Research"
-permalink: /research/
+title: "Publications"
+permalink: /publications/
 author_profile: true
+redirect_from:
+  - /research/
 ---
 
-## Publications
 1.  **Qiren Wang**, Yongtao Yao, Nejib Ammar and Weisong Shi, "iFLOW: An Intelligent and Scalable Multi-Model Federated Learning Framework on the Wheels," *IEEE Transactions on Intelligent Transportation Systems ([TITS](https://ieee-itss.org/pub/t-its/))*, 2025. (Impact Factor: 8.5)
 2.  **Qiren Wang**, Yongtao Yao, Weisong Shi, "Edge-Assisted Object Perception for Autonomous Vehicles under Challenging Exposure and Blur Conditions," *IEEE International Conference on Mobility: Operations, Services, and Technologies ([MOST](https://ieeemobility.org/MOST2025/index.php))*, 2025. 
 3.  Ren Zhong, Zhaofeng Tian, **Qiren Wang**, Mingyu Guo and Weisong Shi, "Design and Implementation of A Voice Controlled Indoor Autonomous Robot Kit," *IEEE International Conference on Mobility: Operations, Services, and Technologies ([MOST](https://ieeemobility.org/MOST2025/index.php))*, 2025. 
