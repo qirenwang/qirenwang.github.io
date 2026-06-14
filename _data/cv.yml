@@ -4,7 +4,7 @@ basics:
   location: "New York Metropolitan Area"
   website: "https://qirenwang.github.io"
   pdf: "/files/Qiren_Wang_Resume_phd.pdf"
-  summary: "Ph.D. candidate in Computer Science at the University of Delaware, working with Prof. Weisong Shi in the Connected and Autonomous Research Lab. My research focuses on autonomous driving, physical intelligence, multimodal foundation models, vision-language-action systems, and federated learning."
+  summary: "Ph.D. candidate in Computer Science at the University of Delaware with 4+ years of research and engineering experience, seeking **Applied Scientist, Research Scientist, or Machine Learning Engineer** roles in autonomous driving, physical AI, computer vision, and foundation models. My work spans perception, VLMs/VLAs, multimodal and agentic AI, and real-world deployment, including vehicular systems, a released driving dataset, medical image segmentation, and industry internship experience."
 
 sections:
   education:
@@ -45,45 +45,51 @@ sections:
         details:
           - "Efficient and scalable model training across heterogeneous edge devices."
 
-  publications:
-    title: "Publications"
+  working_experience:
+    title: "Working Experiences"
     entries:
-      - period: "2025"
-        title: "iFLOW: An Intelligent and Scalable Multi-Model Federated Learning Framework on the Wheels"
-        authors: "**Qiren Wang**, Yongtao Yao, Nejib Ammar, Weisong Shi"
-        venue: "IEEE Transactions on Intelligent Transportation Systems"
-      - period: "2025"
-        title: "Edge-Assisted Object Perception for Autonomous Vehicles under Challenging Exposure and Blur Conditions"
-        authors: "**Qiren Wang**, Yongtao Yao, Weisong Shi"
-        venue: "IEEE International Conference on Mobility: Operations, Services, and Technologies"
-      - period: "2025"
-        title: "Design and Implementation of A Voice Controlled Indoor Autonomous Robot Kit"
-        authors: "Ren Zhong, Zhaofeng Tian, **Qiren Wang**, Mingyu Guo, Weisong Shi"
-        venue: "IEEE International Conference on Mobility: Operations, Services, and Technologies"
-      - period: "2024"
-        title: "VeCBench: A Benchmark Suite for Vehicle Computing"
-        authors: "Tianze Wu, Yongtao Yao, **Qiren Wang**, Arpan Bhattacharjee, Sa Wang, Yungang Bao, Weisong Shi"
-        venue: "ASPLOS Workshop"
-      - period: "2023"
-        title: "Poster: Enhancing Autonomous Vehicles Safety Through Edge-Based Anomaly Detection"
-        authors: "**Qiren Wang**, Ruijie Feng, Weisong Shi"
-        venue: "ACM/IEEE Symposium on Edge Computing"
-
-  service:
-    title: "Service"
-    entries:
-      - period: "2026"
-        title: "Reviewer"
-        institution: "IEEE ITSC, IEEE IV"
-      - period: "2025"
-        title: "Reviewer"
-        institution: "ICRA, ACM/IEEE SEC"
-      - period: "2024"
-        title: "Reviewer and Webmaster"
-        institution: "ACM/IEEE SEC; IEEE/ACM CHASE"
-      - title: "Journal Reviewer"
+      - period: "Jul 2023 - Aug 2023 · 2 mos"
+        location: "Princeton, NJ"
+        title: "ML Research Intern"
+        institution: "CHDI Foundation · Internship"
+      - period: "Jun 2021 - Aug 2021 · 3 mos"
+        location: "New York, NY"
+        title: "Software Engineer Intern"
+        institution: "TS Imagine, formerly Imagine Software · Internship"
         details:
-          - "IEEE Transactions on Big Data, ACM Transactions on Internet of Things, ACM Computing Surveys, IEEE Transactions on Services Computing."
+          - "R&D Group"
+      - period: "Jun 2019 - Aug 2019 · 3 mos"
+        location: "China"
+        title: "Software Engineer Intern"
+        institution: "iFLYTEK Co., Ltd. · Internship"
+      - period: "Jul 2018 - Sep 2018 · 3 mos"
+        location: "Chengdu, Sichuan, China"
+        title: "Data Scientist Intern"
+        institution: "Sefonsoft · Internship"
+      - period: "Jul 2017 - Oct 2017 · 4 mos"
+        location: "Chengdu, Sichuan, China"
+        title: "Software Engineer Intern"
+        institution: "良坤科技 Liangkun Tech · Internship"
+
+  research_experience:
+    title: "Research Experiences"
+    entries:
+      - period: "2025 - Present · 1 yr 6 mos"
+        location: "Newark, DE"
+        title: "Research Assistant"
+        institution: "University of Delaware · Full-time"
+        details:
+          - "Lab Website: [https://www.thecarlab.org/](https://www.thecarlab.org/)"
+      - period: "Aug 2022 - May 2025 · 2 yrs 10 mos"
+        location: "Newark, DE"
+        title: "Teaching Assistant"
+        institution: "University of Delaware · Full-time"
+      - period: "Aug 2021 - Oct 2021 · 3 mos"
+        location: "New York City Metropolitan Area"
+        title: "Research Assistant"
+        institution: "Rutgers University-New Brunswick · Part-time"
+        details:
+          - "Vivian's Lab"
 
   teaching:
     title: "Teaching Assistant"

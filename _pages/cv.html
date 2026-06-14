@@ -12,7 +12,7 @@ author_profile: false
     <div>
       <p class="cv-kicker">{{ cv.basics.label }}</p>
       <h1>{{ cv.basics.name }}</h1>
-      <p>{{ cv.basics.summary }}</p>
+      <p>{{ cv.basics.summary | markdownify | remove: '<p>' | remove: '</p>' }}</p>
       <div class="cv-meta">
         <span>{{ cv.basics.location }}</span>
         <a href="{{ cv.basics.website }}">{{ cv.basics.website }}</a>
