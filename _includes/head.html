@@ -14,14 +14,25 @@
 <script>
   document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
   (function () {
-    var theme = null;
+    var storageKey = 'qirenwang-theme-preference';
+    var legacyStorageKey = 'qirenwang-theme';
+    var storedTheme = null;
+    var systemTheme = 'light';
+
     try {
-      theme = window.localStorage.getItem('qirenwang-theme');
+      window.localStorage.removeItem(legacyStorageKey);
+      storedTheme = window.localStorage.getItem(storageKey);
     } catch (error) {}
-    if (!theme && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      theme = 'dark';
+
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      systemTheme = 'dark';
     }
-    document.documentElement.setAttribute('data-theme', theme || 'light');
+
+    if (storedTheme !== 'light' && storedTheme !== 'dark') {
+      storedTheme = null;
+    }
+
+    document.documentElement.setAttribute('data-theme', storedTheme || systemTheme);
   })();
 </script>
 

@@ -1,14 +1,21 @@
 (function () {
-  var storageKey = "qirenwang-theme";
+  var storageKey = "qirenwang-theme-preference";
+  var legacyStorageKey = "qirenwang-theme";
+  var systemMedia = window.matchMedia ? window.matchMedia("(prefers-color-scheme: dark)") : null;
   var root = document.documentElement;
 
   function getSystemTheme() {
-    return window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+    return systemMedia && systemMedia.matches ? "dark" : "light";
+  }
+
+  function isValidTheme(theme) {
+    return theme === "dark" || theme === "light";
   }
 
   function getStoredTheme() {
     try {
-      return window.localStorage.getItem(storageKey);
+      var theme = window.localStorage.getItem(storageKey);
+      return isValidTheme(theme) ? theme : null;
     } catch (error) {
       return null;
     }
@@ -23,6 +30,10 @@
   }
 
   function setTheme(theme) {
+    if (!isValidTheme(theme)) {
+      theme = getSystemTheme();
+    }
+
     root.setAttribute("data-theme", theme);
     var button = document.getElementById("theme-toggle");
     if (button) {
@@ -31,9 +42,41 @@
     }
   }
 
+  function clearLegacyTheme() {
+    try {
+      window.localStorage.removeItem(legacyStorageKey);
+    } catch (error) {
+      return;
+    }
+  }
+
+  function applyPreferredTheme() {
+    setTheme(getStoredTheme() || getSystemTheme());
+  }
+
+  function syncWithSystemTheme() {
+    if (!getStoredTheme()) {
+      setTheme(getSystemTheme());
+    }
+  }
+
+  function watchSystemTheme() {
+    if (!systemMedia) {
+      return;
+    }
+
+    if (systemMedia.addEventListener) {
+      systemMedia.addEventListener("change", syncWithSystemTheme);
+    } else if (systemMedia.addListener) {
+      systemMedia.addListener(syncWithSystemTheme);
+    }
+  }
+
   function init() {
     var button = document.getElementById("theme-toggle");
-    setTheme(getStoredTheme() || root.getAttribute("data-theme") || getSystemTheme());
+    clearLegacyTheme();
+    applyPreferredTheme();
+    watchSystemTheme();
 
     if (!button) {
       return;
