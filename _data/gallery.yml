@@ -5,12 +5,6 @@
   alt: "Ward's Beach and Boat Launch in Wilmington, Vermont"
   position: "50% 68%"
 
-- title: "Portrait"
-  subtitle: "Personal website photo"
-  category: "life"
-  image: "/images/bio-photo-2.jpg"
-  alt: "Portrait"
-
 - title: "Point La Jolla"
   subtitle: "San Diego, California"
   category: "travel"
@@ -42,7 +36,7 @@
   alt: "Newark Reservoir in Newark, Delaware"
 
 - title: "Chongqing Lao Zao(重庆老灶)"
-  subtitle: "Newark, Delaware"
+  subtitle: "Flushing, New York"
   category: "life"
   image: "/images/chongqinglaozao_ny.png"
-  alt: "Chongqing Lao Zao in Newark, Delaware"
+  alt: "Chongqing Lao Zao in Flushing, New York"
