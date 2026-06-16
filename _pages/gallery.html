@@ -208,7 +208,7 @@ author_profile: true
     {% for item in site.data.gallery %}
     <figure class="gallery-card" data-category="{{ item.category }}">
       <button type="button" data-full="{{ item.image }}" data-title="{{ item.title }}">
-        <img src="{{ item.image }}" alt="{{ item.alt }}"{% if item.position %} style="object-position: {{ item.position }};"{% endif %}>
+        <img src="{{ item.image }}" alt="{{ item.alt }}" loading="lazy" decoding="async"{% if item.position %} style="object-position: {{ item.position }};"{% endif %}>
       </button>
       <figcaption><strong>{{ item.title }}</strong>{{ item.subtitle }}</figcaption>
     </figure>
