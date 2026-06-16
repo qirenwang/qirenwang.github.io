@@ -81,6 +81,7 @@ author_profile: true
   .gallery-card button {
     display: block;
     width: 100%;
+    aspect-ratio: 4 / 3;
     padding: 0;
     border: 0;
     border-radius: 8px;
@@ -93,7 +94,9 @@ author_profile: true
   .gallery-card img {
     display: block;
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
   }
 
   .gallery-card figcaption {
@@ -200,7 +203,7 @@ author_profile: true
     {% for item in site.data.gallery %}
     <figure class="gallery-card" data-category="{{ item.category }}">
       <button type="button" data-full="{{ item.image }}" data-title="{{ item.title }}">
-        <img src="{{ item.image }}" alt="{{ item.alt }}" loading="lazy" decoding="async">
+        <img src="{{ item.image }}" alt="{{ item.alt }}" loading="lazy" decoding="async"{% if item.position %} style="object-position: {{ item.position }};"{% endif %}>
       </button>
       <figcaption><strong>{{ item.title }}</strong>{{ item.subtitle }}</figcaption>
     </figure>
