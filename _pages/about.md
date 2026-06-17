@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-Hi! I am a Ph.D. Candidate in [Connected and Autonomous Research Lab (CAR)](https://www.thecarlab.org/home) at [Department of Computer Science](https://www.cis.udel.edu), at [University of Delaware](https://www.udel.edu). Currently, I am fortunate under the supervision of Professor [Weisong Shi](https://www.weisongshi.org). Before this, I received my master degree in Data Science(Statistics Track) from [Rutgers University](https://rutgers.edu).
+Hi! I am a Ph.D. Candidate in [Connected and Autonomous Research Lab (CAR)](https://www.thecarlab.org/home) at Department of Computer Science, at University of Delaware. Currently, I am fortunate under the supervision of Professor [Weisong Shi](https://www.weisongshi.org). Before this, I received my master degree in Data Science(Statistics Track) from Rutgers University.
 
 ## Research
 My current research interests include **Autonomous Driving, Physical Intelligence, Machine Learning, VLMs/LLMs, Vision-Language-Action Models (VLAs), and Federated Learning**.
@@ -66,6 +66,5 @@ For more info
 ------
 More info about configuring academicpages can be found in [the guide](https://academicpages.github.io/markdown/). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful.
 -->
-
 
 
