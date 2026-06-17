@@ -92,11 +92,42 @@ html[data-theme="dark"] {
     background: #2698ba;
   }
 
+  .greedy-nav button {
+    color: #e8e8e8;
+    background: rgba(255, 255, 255, 0.08);
+
+    &:hover,
+    &:focus {
+      color: #fff;
+      background: rgba(255, 255, 255, 0.14);
+    }
+
+    &.close {
+      background: rgba(132, 141, 148, 0.55);
+      box-shadow: 0 16px 34px rgba(0, 0, 0, 0.34);
+    }
+  }
+
   .greedy-nav .hidden-links {
     color: #e8e8e8;
-    background: #212529;
-    border-color: #424246;
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
+    border-color: rgba(255, 255, 255, 0.12);
+    background: rgba(32, 35, 39, 0.78);
+    box-shadow: 0 20px 44px rgba(0, 0, 0, 0.44);
+  }
+
+  .greedy-nav .hidden-links:before {
+    border-color: rgba(255, 255, 255, 0.12);
+    background: rgba(32, 35, 39, 0.78);
+  }
+
+  .greedy-nav .hidden-links a {
+    color: #e8e8e8;
+
+    &:hover,
+    &:focus {
+      color: #2698ba;
+      background: rgba(255, 255, 255, 0.08);
+    }
   }
 
   .author__urls {
