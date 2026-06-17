@@ -121,7 +121,7 @@ author_profile: true
     justify-content: center;
     padding: 2rem;
     background: rgba(0, 0, 0, 0.78);
-    z-index: 10000;
+    z-index: 1000000;
   }
 
   .gallery-lightbox.is-open {
@@ -228,6 +228,8 @@ author_profile: true
     var lightboxCaption = lightbox.querySelector("p");
     var closeButton = lightbox.querySelector("button");
 
+    document.body.appendChild(lightbox);
+
     filters.forEach(function (filter) {
       filter.addEventListener("click", function () {
         var category = filter.getAttribute("data-filter");
@@ -251,6 +253,7 @@ author_profile: true
         lightboxCaption.textContent = trigger.getAttribute("data-title");
         lightbox.classList.add("is-open");
         lightbox.setAttribute("aria-hidden", "false");
+        document.body.classList.add("overflow--hidden");
       });
     });
 
@@ -258,6 +261,7 @@ author_profile: true
       lightbox.classList.remove("is-open");
       lightbox.setAttribute("aria-hidden", "true");
       lightboxImage.src = "";
+      document.body.classList.remove("overflow--hidden");
     }
 
     closeButton.addEventListener("click", closeLightbox);
