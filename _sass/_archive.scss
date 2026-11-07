@@ -14,6 +14,12 @@
     @include prefix(0.5 of 12);
   }
 
+  /* section page titles (Publications, CV, Service, Contact, Gallery)
+     match the h2 section headings on About, e.g. "Research" */
+  > .page__title {
+    font-size: $type-size-4;
+  }
+
   a {
     text-decoration: underline;
 
