@@ -1,0 +1,17 @@
+---
+layout: archive
+title: "Publications"
+permalink: /publications/
+author_profile: true
+redirect_from:
+  - /research/
+---
+
+{% include base_path %}
+
+<div class="pub-list">
+{%- assign pubs = site.publications | sort: "date" | reverse -%}
+{%- for pub in pubs %}
+  {% include publication-card.html post=pub %}
+{%- endfor %}
+</div>

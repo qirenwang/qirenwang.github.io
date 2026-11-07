@@ -1,0 +1,56 @@
+{% include base_path %}
+{%- assign post = include.post -%}
+{%- assign pub_year = post.date | date: "%Y" -%}
+{%- assign pub_title = post.title | markdownify | strip_html | strip | escape_once -%}
+{%- assign pub_me = site.publication_author_highlight -%}
+<article class="pub-card">
+  <a class="pub-card__teaser" href="{{ base_path }}{{ post.url }}" aria-label="{{ pub_title }}">
+    {%- if post.teaser and post.teaser != "" -%}
+      <img class="pub-card__img" src="{{ base_path }}/images/{{ post.teaser }}" alt="" loading="lazy">
+    {%- else -%}
+      <span class="pub-card__placeholder" aria-hidden="true">{{ post.venue_short | escape }} {{ pub_year }}</span>
+    {%- endif -%}
+  </a>
+  <div class="pub-card__body">
+    <h2 class="pub-card__title"><a href="{{ base_path }}{{ post.url }}">{{ pub_title }}</a></h2>
+    {%- if post.authors and post.authors.size > 0 %}
+    <p class="pub-card__authors">
+      {%- for author in post.authors -%}
+        {%- if author == pub_me -%}
+          <span class="pub-card__author pub-card__author--me">{{ author | escape }}</span>
+        {%- else -%}
+          <span class="pub-card__author">{{ author | escape }}</span>
+        {%- endif -%}
+        {%- unless forloop.last -%}, {% endunless -%}
+      {%- endfor -%}
+    </p>
+    {%- endif %}
+    <p class="pub-card__venue">
+      {%- if post.venue and post.venue != "" -%}
+        <em>
+          {%- if post.venue_url and post.venue_url != "" -%}
+            <a class="pub-card__venue-link" href="{{ post.venue_url }}" target="_blank" rel="noopener">{{ post.venue | escape }}</a>
+          {%- else -%}
+            {{ post.venue | escape }}
+          {%- endif -%}
+        </em>
+        {%- if post.location and post.location != "" -%}, {{ post.location | escape }}{%- endif -%}
+        , {% endif -%}
+      {{ pub_year }}.
+    </p>
+    {%- if post.note and post.note != "" %}
+    <p class="pub-card__note">{{ post.note | escape }}</p>
+    {%- endif %}
+    {%- assign has_bib = post.bibtex | strip | size -%}
+    {%- if post.links.size > 0 or has_bib > 0 %}
+    <div class="pub-card__links">
+      {%- for link in post.links %}
+      <a class="pub-btn" href="{{ link.url }}" target="_blank" rel="noopener">{{ link.label | escape }}</a>
+      {%- endfor %}
+      {%- if has_bib > 0 %}
+      <details class="pub-card__bibtex"><summary class="pub-btn">bibtex</summary><pre class="pub-card__bibtex-pre"><code>{{ post.bibtex | strip | escape }}</code></pre></details>
+      {%- endif %}
+    </div>
+    {%- endif %}
+  </div>
+</article>

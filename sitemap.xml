@@ -13,9 +13,28 @@
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://qirenwang.github.io/research/</loc>
-  <lastmod>2022-05-27T01:47:45+00:00</lastmod>
+  <loc>https://qirenwang.github.io/publications/</loc>
   <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://qirenwang.github.io/publications/iflow/</loc>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://qirenwang.github.io/publications/edge-object-perception/</loc>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://qirenwang.github.io/publications/voice-robot-kit/</loc>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://qirenwang.github.io/publications/vecbench/</loc>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://qirenwang.github.io/publications/edge-anomaly-detection-poster/</loc>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>https://qirenwang.github.io/teaching/</loc>

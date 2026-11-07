@@ -1,0 +1,415 @@
+/* ==========================================================================
+   PUBLICATIONS
+   ========================================================================== */
+
+/*
+   Listing
+   ========================================================================== */
+
+.pub-list {
+  margin-top: 1.5rem;
+}
+
+.pub-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1rem;
+  margin-bottom: 2.75rem;
+  border: 0;
+
+  @include breakpoint($medium) {
+    grid-template-columns: minmax(0, 16rem) minmax(0, 1fr);
+    gap: 2rem;
+  }
+}
+
+/* teaser box (shared with detail page) */
+.pub-card__teaser,
+.pub-page__teaser {
+  display: block;
+  padding: 0.75rem;
+  border: 1px solid $border-color;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 1px 2px rgba(32, 33, 36, 0.06);
+}
+
+.pub-card__teaser {
+  position: relative;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  text-decoration: none;
+  transition: $global-transition;
+
+  &:hover,
+  &:focus-visible {
+    box-shadow: 0 10px 24px rgba(32, 33, 36, 0.12);
+    transform: translateY(-2px);
+  }
+}
+
+.archive .pub-card__teaser,
+.archive .pub-card__teaser:hover {
+  text-decoration: none;
+
+  img {
+    box-shadow: none;
+  }
+}
+
+.pub-card__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.pub-card__placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: $light-gray;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-align: center;
+  border-radius: 6px;
+  background: #fafafa;
+}
+
+.pub-card__body {
+  min-width: 0;
+}
+
+.pub-card__title {
+  margin: 0 0 0.35rem;
+  padding: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.3;
+  border: 0;
+
+  @include breakpoint($medium) {
+    font-size: 1.35rem;
+  }
+}
+
+.pub-card__title a,
+.archive .pub-card__title a {
+  color: $text-color;
+  text-decoration: none;
+
+  &:hover,
+  &:focus-visible {
+    color: $link-color;
+    text-decoration: none;
+  }
+}
+
+/* authors / venue / note (shared with detail page) */
+.pub-card__authors,
+.pub-page__authors {
+  margin: 0 0 0.25rem;
+  color: $gray;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.pub-card__author--me,
+.pub-page__author--me {
+  color: $text-color;
+  font-weight: 600;
+}
+
+.pub-card__venue,
+.pub-page__venue {
+  margin: 0 0 0.25rem;
+  color: $text-color;
+  font-size: 1rem;
+  line-height: 1.5;
+
+  em {
+    font-style: italic;
+  }
+}
+
+.pub-card__venue-link,
+.archive .pub-card__venue-link,
+.page .pub-card__venue-link,
+.pub-page__venue-link,
+.page .pub-page__venue-link {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px dotted $light-gray;
+
+  &:hover,
+  &:focus-visible {
+    color: $link-color;
+    text-decoration: none;
+  }
+}
+
+.pub-card__note,
+.pub-page__note {
+  margin: 0 0 0.35rem;
+  color: $gray;
+  font-size: 0.9rem;
+}
+
+.pub-card__links,
+.pub-page__links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+/*
+   Pill buttons
+   ========================================================================== */
+
+.pub-btn,
+.archive .pub-btn,
+.page .pub-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.28em 0.95em;
+  color: $link-color;
+  font-size: 0.85rem;
+  font-weight: 500;
+  line-height: 1.4;
+  text-decoration: none !important;
+  border: 1px solid $link-color;
+  border-radius: 999px;
+  background: transparent;
+  cursor: pointer;
+  transition: $global-transition;
+
+  &:hover,
+  &:focus-visible {
+    color: #fff;
+    background: $link-color;
+  }
+}
+
+summary.pub-btn {
+  list-style: none;
+  user-select: none;
+
+  &::-webkit-details-marker {
+    display: none;
+  }
+}
+
+.pub-card__bibtex {
+  display: contents;
+
+  &[open] > summary.pub-btn {
+    color: #fff;
+    background: $link-color;
+  }
+}
+
+.pub-card__bibtex-pre,
+.pub-page__bibtex pre {
+  margin: 0.5rem 0 0;
+  padding: 0.9rem 1rem;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  white-space: pre;
+  overflow-x: auto;
+  border: 1px solid $border-color;
+  border-radius: 8px;
+  background: #fafafa;
+
+  code {
+    padding: 0;
+    font-size: inherit;
+    border: 0;
+    background: transparent;
+  }
+}
+
+.pub-card__bibtex-pre {
+  flex-basis: 100%;
+  width: 100%;
+}
+
+/* Current engines wrap <details> content in ::details-content (a block box),
+   which becomes the real flex item once <details> is display: contents.
+   Kept in its own rule so engines without the pseudo-element ignore only this. */
+.pub-card__bibtex::details-content {
+  flex: 0 0 100%;
+  min-width: 0;
+}
+
+/*
+   Detail page
+   ========================================================================== */
+
+.pub-page__header {
+  margin-bottom: 0.5rem;
+
+  .page__title {
+    margin-bottom: 0.5rem;
+  }
+}
+
+.pub-page__teaser {
+  max-width: 100%;
+  margin: 1.5rem 0;
+
+  &:empty {
+    display: none;
+  }
+}
+
+.pub-page__img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.pub-page__abstract {
+  margin-top: 1.5rem;
+}
+
+.pub-page__bibtex {
+  margin-top: 2rem;
+
+  h2 {
+    margin: 0 0 0.5rem;
+    padding: 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: 0;
+  }
+}
+
+.pub-page__back {
+  margin-top: 2rem;
+
+  a {
+    color: $link-color;
+    text-decoration: none;
+
+    &:hover,
+    &:focus-visible {
+      text-decoration: underline;
+    }
+  }
+}
+
+/*
+   Print
+   ========================================================================== */
+
+@media print {
+  .pub-card {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .pub-card__teaser,
+  .pub-page__teaser {
+    box-shadow: none;
+    transform: none;
+  }
+
+  .pub-card__bibtex-pre,
+  .pub-page__bibtex pre {
+    white-space: pre-wrap;
+  }
+}
+
+/*
+   Dark theme
+   ========================================================================== */
+
+html[data-theme="dark"] {
+  .pub-card .pub-card__title a,
+  .pub-card__venue,
+  .pub-page__venue,
+  .pub-card__author--me,
+  .pub-page__author--me {
+    color: #e8e8e8;
+  }
+
+  .pub-card .pub-card__title a:hover,
+  .pub-card .pub-card__title a:focus-visible {
+    color: #2698ba;
+  }
+
+  .pub-card__authors,
+  .pub-page__authors,
+  .pub-card__note,
+  .pub-page__note,
+  .pub-card__placeholder {
+    color: #828282;
+  }
+
+  .pub-card__teaser,
+  .pub-page__teaser {
+    border-color: #424246;
+    background: #212529;
+    box-shadow: none;
+  }
+
+  .pub-card__teaser:hover,
+  .pub-card__teaser:focus-visible {
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.35);
+  }
+
+  .pub-card__placeholder {
+    background: #2c3237;
+  }
+
+  .pub-card .pub-card__venue-link,
+  .pub-page .pub-page__venue-link {
+    color: inherit;
+    border-bottom-color: #828282;
+
+    &:hover,
+    &:focus-visible {
+      color: #2698ba;
+    }
+  }
+
+  .pub-card .pub-btn,
+  .pub-page .pub-btn {
+    color: #2698ba;
+    border-color: #2698ba;
+    background: transparent;
+
+    &:hover,
+    &:focus-visible {
+      color: #fff;
+      background: #2698ba;
+    }
+  }
+
+  .pub-card .pub-card__bibtex[open] > summary.pub-btn {
+    color: #fff;
+    background: #2698ba;
+  }
+
+  .pub-card__bibtex-pre,
+  .pub-page__bibtex pre {
+    color: #e8e8e8;
+    border-color: #424246;
+    background: #2c3237;
+
+    code {
+      color: #e8e8e8;
+      background: transparent;
+    }
+  }
+
+  .pub-page .pub-page__back a {
+    color: #2698ba;
+  }
+}
