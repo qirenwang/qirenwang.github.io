@@ -57,9 +57,20 @@ layout: default
         {%- endif %}
       </header>
 
+      {%- include publication-media.html pub=page -%}
+      {%- assign pub_alt = page.title | markdownify | strip_html | strip | escape_once -%}
       <div class="pub-page__teaser">
-        {%- if page.teaser and page.teaser != "" -%}
-          <img class="pub-page__img" src="{{ base_path }}/images/{{ page.teaser }}" alt="{{ page.title | markdownify | strip_html | strip | escape_once }}">
+        {%- if pub_media.size > 0 -%}
+          {%- for m in pub_media -%}
+            {%- assign m_ext = m.extname | downcase -%}
+            {%- if m_ext == ".mp4" or m_ext == ".webm" or m_ext == ".mov" -%}
+              <video class="pub-page__media pub-page__video" src="{{ base_path }}{{ m.path }}" controls playsinline preload="metadata"></video>
+            {%- else -%}
+              <img class="pub-page__media pub-page__img" src="{{ base_path }}{{ m.path }}" alt="{{ pub_alt }}" loading="lazy">
+            {%- endif -%}
+          {%- endfor -%}
+        {%- elsif pub_teaser != "" -%}
+          <img class="pub-page__media pub-page__img" src="{{ base_path }}{{ pub_teaser }}" alt="{{ pub_alt }}">
         {%- endif -%}
       </div>
 

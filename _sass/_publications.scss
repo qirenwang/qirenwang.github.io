@@ -266,11 +266,23 @@ summary.pub-btn {
   }
 }
 
-.pub-page__img {
+.pub-page__img,
+.pub-page__video {
   display: block;
   max-width: 100%;
   height: auto;
   margin: 0 auto;
+}
+
+.pub-page__video {
+  width: 100%;
+  border-radius: 4px;
+  background: #000;
+}
+
+/* several detail-* files stack with a gap */
+.pub-page__media + .pub-page__media {
+  margin-top: 1rem;
 }
 
 .pub-page__abstract {

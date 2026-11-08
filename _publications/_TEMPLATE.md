@@ -4,8 +4,12 @@
 #    files starting with "_" are ignored by Jekyll, which is why this template never shows up).
 # 2. Fill in the keys below. Required: title, collection, permalink, date, authors, venue.
 #    Every other key is optional: delete it or leave it empty if you do not need it.
-# 3. Teaser images go in images/publications/ (e.g. images/publications/your-slug.png).
-#    Until a teaser is set, the card shows a placeholder box with venue_short + year.
+# 3. Figures and videos go in images/publications/<your-slug>/ (slug = last part of the
+#    permalink). They are picked up automatically, no key needed:
+#      teaser.png              card image on the Publications list (16:10, e.g. 1600x1000)
+#      detail-1.png, -2.mp4    images or videos on the detail page, in name order
+#    With no detail-* files the detail page shows the teaser; with no teaser the card
+#    shows a placeholder box with venue_short + year. See images/publications/README.md.
 # 4. Anything written below the closing "---" becomes the abstract/summary on the
 #    paper's detail page. Leave it empty if you have nothing to add.
 
@@ -25,7 +29,7 @@ venue_short: "ABBR"                      # short name shown in the placeholder t
 venue_url: "https://venue-homepage.example.org/"   # makes the venue name a link
 location: "City, State, Country"         # conferences only; appended to the venue line
 note: "Impact Factor: 9.1"               # small muted line under the venue (awards, IF, "Oral", ...)
-teaser: "publications/your-slug.png"     # path relative to /images/; the file lives in images/publications/
+teaser: ""                               # rarely needed: overrides teaser.* with another path relative to /images/
 links:                                   # pill buttons, shown in this order; the label is the button text
   - label: paper
     url: https://doi.org/10.xxxx/xxxxx

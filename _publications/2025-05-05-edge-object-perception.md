@@ -11,7 +11,6 @@ venue: "IEEE International Conference on Mobility: Operations, Services, and Tec
 venue_short: "MOST"
 venue_url: "https://ieeemobility.org/MOST2025/index.php"
 location: "Newark, Delaware, USA"
-# teaser: "publications/edge-object-perception.png"   # add images/publications/edge-object-perception.png, then uncomment
 links:
   - label: paper
     url: https://doi.org/10.1109/MOST65065.2025.00011

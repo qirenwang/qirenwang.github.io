@@ -11,7 +11,6 @@ venue: "ACM/IEEE Symposium on Edge Computing (SEC)"
 venue_short: "SEC"
 venue_url: "https://acm-ieee-sec.org/2023/"
 location: "Wilmington, Delaware, USA"
-# teaser: "publications/edge-anomaly-detection-poster.png"   # add images/publications/edge-anomaly-detection-poster.png, then uncomment
 links:
   - label: paper
     url: https://doi.org/10.1145/3583740.3628423
