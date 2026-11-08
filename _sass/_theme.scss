@@ -52,6 +52,9 @@
 
 html[data-theme="dark"] {
   color-scheme: dark;
+  /* html stays white from _reset.scss otherwise, and shows as a white strip
+     between short page content and the bottom-pinned footer */
+  background-color: #1c1c1d;
 
   ::selection {
     color: #fff;
