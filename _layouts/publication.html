@@ -55,6 +55,7 @@ layout: default
         {%- if page.note and page.note != "" %}
         <p class="pub-page__note">{{ page.note | escape }}</p>
         {%- endif %}
+        <p class="pub-page__back"><a href="{{ base_path }}/publications/">&larr; Back to publications</a></p>
       </header>
 
       {%- include publication-media.html pub=page -%}
@@ -64,7 +65,14 @@ layout: default
           {%- for m in pub_media -%}
             {%- assign m_ext = m.extname | downcase -%}
             {%- if m_ext == ".mp4" or m_ext == ".webm" or m_ext == ".mov" -%}
-              <video class="pub-page__media pub-page__video" src="{{ base_path }}{{ m.path }}" controls playsinline preload="metadata"></video>
+              {%- assign m_poster_name = m.basename | append: "-poster" -%}
+              {%- assign m_poster = pub_files | where: "basename", m_poster_name | first -%}
+              {%- if m_poster -%}
+              <video class="pub-page__media pub-page__video" src="{{ base_path }}{{ m.path }}" poster="{{ base_path }}{{ m_poster.path }}" controls playsinline preload="metadata"></video>
+              {%- else -%}
+              {%- comment -%} #t=0.1 nudges Safari into drawing a frame when there is no poster {%- endcomment -%}
+              <video class="pub-page__media pub-page__video" src="{{ base_path }}{{ m.path }}#t=0.1" controls playsinline preload="metadata"></video>
+              {%- endif -%}
             {%- else -%}
               <img class="pub-page__media pub-page__img" src="{{ base_path }}{{ m.path }}" alt="{{ pub_alt }}" loading="lazy">
             {%- endif -%}
@@ -95,8 +103,6 @@ layout: default
         <pre><code>{{ page.bibtex | strip | escape }}</code></pre>
       </section>
       {%- endif %}
-
-      <p class="pub-page__back"><a href="{{ base_path }}/publications/">&larr; Back to publications</a></p>
     </div>
   </article>
 </div>

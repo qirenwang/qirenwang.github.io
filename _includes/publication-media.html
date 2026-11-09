@@ -7,11 +7,15 @@
   Files:   teaser.(png|jpg|jpeg|webp|gif)  card image on the Publications list
            detail-1.png, detail-2.mp4, ... images or videos on the detail page,
                                            shown in file-name order
+           detail-1-poster.jpg             still shown in place of detail-1.mp4
+                                           until it plays (Safari shows black
+                                           without one); never listed itself
 
   Sets, for the caller:
     pub_teaser  site-relative URL of the card image, or "" if none
                 (a front-matter `teaser:` path, relative to /images/, wins)
-    pub_media   array of detail-* static files, in name order
+    pub_files   every static file in the folder, sorted by path
+    pub_media   array of detail-* static files minus posters, in name order
 {%- endcomment -%}
 {%- assign pub_slug = include.pub.url | split: "/" | last -%}
 {%- assign pub_dir = "/images/publications/" | append: pub_slug | append: "/" -%}
@@ -25,4 +29,10 @@
     {%- assign pub_teaser = pub_teaser_file.path -%}
   {%- endif -%}
 {%- endif -%}
-{%- assign pub_media = pub_files | where_exp: "f", "f.basename contains 'detail-'" -%}
+{%- assign pub_detail = pub_files | where_exp: "f", "f.basename contains 'detail-'" -%}
+{%- assign pub_media = "" | split: "" -%}
+{%- for f in pub_detail -%}
+  {%- unless f.basename contains "-poster" -%}
+    {%- assign pub_media = pub_media | push: f -%}
+  {%- endunless -%}
+{%- endfor -%}

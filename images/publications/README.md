@@ -18,6 +18,7 @@ Drop files into the folder with these names. Nothing else needs editing.
 | --- | --- |
 | `teaser.png` (or `.jpg`, `.jpeg`, `.webp`, `.gif`) | Card image on the Publications list. Every paper should have one. |
 | `detail-1.png`, `detail-2.mp4`, ... | Detail page, top to bottom in file-name order. Images and videos can be mixed. |
+| `detail-2-poster.jpg` (video name + `-poster`) | Still shown in the video box until it plays. Without one, Safari shows a black box. Usually the video's first frame. |
 
 - If a paper has no `detail-*` files, its detail page shows `teaser` instead.
 - If a paper has no `teaser`, its card shows a grey placeholder with the venue and year.
