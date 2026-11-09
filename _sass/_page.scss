@@ -399,3 +399,9 @@
   font-size: $type-size-6;
   text-transform: uppercase;
 }
+
+/* "seeking full-time opportunities" line under the About intro;
+   accent colour, but no underline so it doesn't read as a link */
+.page__content .about-callout {
+  color: $link-color;
+}

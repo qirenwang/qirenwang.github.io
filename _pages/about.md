@@ -10,6 +10,9 @@ redirect_from:
 
 Hi! I am a Ph.D. Candidate in [Connected and Autonomous Research Lab (CAR)](https://www.thecarlab.org/home) at Department of Computer Science, at University of Delaware. Currently, I am fortunate under the supervision of Professor [Weisong Shi](https://www.weisongshi.org). Before this, I received my master degree in Data Science(Statistics Track) from Rutgers University.
 
+I am actively seeking full-time opportunities — feel free to connect with me :p !
+{: .about-callout}
+
 ## Research
 My current research interests include **Autonomous Driving, Physical Intelligence, Machine Learning, VLMs/LLMs, Vision-Language-Action Models (VLAs), and Federated Learning**.
 
